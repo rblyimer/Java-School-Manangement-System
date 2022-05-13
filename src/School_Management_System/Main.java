@@ -19,15 +19,16 @@ public class Main {
         List<Student> studentList = new ArrayList<>();
 
         studentList.add(Robel);
-        studentList.add(Keng);
         studentList.add(Ozzy);
+        studentList.add(Keng);
 
         School CTAC = new School(teacherList,studentList);
         Teacher Erin = new Teacher(6,"Erin", 900);
 
         CTAC.addTeacher(Erin);
-        Robel.payFees(5000);
-        Ozzy.payFees(6000);
+        Robel.payFees(55000);
+        Ozzy.payFees(55000);
+        Keng.payFees(55000);
         System.out.println("CTAC has earned $"+ CTAC.getTotalMoneyEarned());
 
         System.out.println("Making SCHOOL PAY SALARY");
